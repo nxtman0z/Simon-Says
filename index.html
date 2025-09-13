@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Says Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game-container">
+        <!-- Header Section -->
+        <header class="game-header">
+            <h1>SIMON SAYS</h1>
+            <div class="game-info">
+                <div class="info-card">
+                    <div class="info-label">LEVEL</div>
+                    <div class="info-value" id="level">0</div>
+                </div>
+                <div class="info-card">
+                    <div class="info-label">SCORE</div>
+                    <div class="info-value" id="score">0</div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Status and Controls -->
+        <div class="control-section">
+            <div class="status-display">
+                <div id="status-message">Ready to play?</div>
+            </div>
+            <div class="game-controls">
+                <button id="start-btn" class="modern-btn start-btn">
+                    <span>START GAME</span>
+                </button>
+                <button id="reset-btn" class="modern-btn reset-btn">
+                    <span>RESET</span>
+                </button>
+                <button id="help-btn" class="modern-btn help-btn">
+                    <span>HOW TO PLAY</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Game Board -->
+        <div class="game-board">
+            <div class="simon-grid">
+                <div class="simon-button green-btn" id="green" data-color="green">
+                    <div class="button-inner"></div>
+                </div>
+                <div class="simon-button red-btn" id="red" data-color="red">
+                    <div class="button-inner"></div>
+                </div>
+                <div class="simon-button yellow-btn" id="yellow" data-color="yellow">
+                    <div class="button-inner"></div>
+                </div>
+                <div class="simon-button blue-btn" id="blue" data-color="blue">
+                    <div class="button-inner"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Instructions Modal -->
+    <div id="instructions-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>HOW TO PLAY</h2>
+                <button class="close-btn" id="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="instruction-grid">
+                    <div class="instruction-item">
+                        <div class="step-number">1</div>
+                        <div class="step-text">Watch the sequence of colors that light up</div>
+                    </div>
+                    <div class="instruction-item">
+                        <div class="step-number">2</div>
+                        <div class="step-text">Repeat the sequence by clicking the colored buttons</div>
+                    </div>
+                    <div class="instruction-item">
+                        <div class="step-number">3</div>
+                        <div class="step-text">Each round adds one more color to the sequence</div>
+                    </div>
+                    <div class="instruction-item">
+                        <div class="step-number">4</div>
+                        <div class="step-text">Don't break the sequence or the game ends!</div>
+                    </div>
+                </div>
+                <div class="keyboard-hint">
+                    <h3>Keyboard Shortcuts</h3>
+                    <div class="key-mapping">
+                        <span class="key">Q</span> Green
+                        <span class="key">W</span> Red
+                        <span class="key">A</span> Yellow
+                        <span class="key">S</span> Blue
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
