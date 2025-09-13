@@ -4,7 +4,11 @@ A modern, responsive implementation of the classic Simon Says memory game built 
 
 ## 🚀 Live Demo
 
-Open `index.html` in your web browser to start playing immediately!
+[![Live Demo](https://img.shields.io/badge/🎮_Play_Now-Live_Demo-00f5ff?style=for-the-badge&logo=vercel&logoColor=white)](https://simon-says-ruby.vercel.app/)
+
+**[🎯 Click here to play the game live!](https://simon-says-ruby.vercel.app/)**
+
+Or open `index.html` in your web browser to run it locally.
 
 ## ✨ Features
 
