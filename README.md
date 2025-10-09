@@ -188,3 +188,4 @@ This project is open source and available under the MIT License.
 **Enjoy playing Simon Says!** 🎮✨
 
 *Challenge yourself and see how high you can score!*
+.....
